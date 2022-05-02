@@ -1,0 +1,65 @@
+#container {
+    /* border: 1px solid black ; */
+    width: 40vh;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#campoOrigemDestino {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid red;
+    width: 100%;
+    height: 15%;
+}
+
+#campoOrigemDestino > input {
+    width: 78%;
+    border-radius: 10px;
+}
+
+#campoOrigemDestino > input, #campoOrigemDestino > label{
+    margin: 3px;
+}
+
+#campoChat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid green;
+    height: 100%;
+}
+
+#campoChat #chat {
+    border: 1px solid blue;
+    width: 90%;
+    height: 80%;
+    margin: 0px 0px 5px 0px;
+    overflow: auto;
+}
+#campoChat #divMensage {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    height: 12%;
+}
+#campoChat #divMensage #inputChat {
+    width:88%;
+    height: 90%;
+    
+}
+#campoChat #divMensage #button {
+    height: 70%;
+    width:10%;
+    background-image: url(../img/enviar.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
