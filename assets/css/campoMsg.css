@@ -1,12 +1,12 @@
-#container {
-    /* border: 1px solid black ; */
+.container {
+    border: 1px solid black ; 
     width: 40vh;
     height: 50vh;
     display: flex;
     flex-direction: column;
 }
 
-#campoOrigemDestino {
+#campoOrigemDestino, #campoLogin{
     display: flex;
     flex-wrap: wrap;
     border: 1px solid red;
@@ -14,12 +14,15 @@
     height: 15%;
 }
 
-#campoOrigemDestino > input {
+
+
+#campoOrigemDestino > input, #campoLogin > input, #campoOrigemDestino > select {
     width: 78%;
     border-radius: 10px;
 }
 
-#campoOrigemDestino > input, #campoOrigemDestino > label{
+#campoOrigemDestino > input, #campoOrigemDestino > label,
+#campoLogin > input, #campoLogin > label{
     margin: 3px;
 }
 
@@ -58,6 +61,11 @@
     background-image: url(../img/enviar.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+#logar {
+    height: 10%;
+    width: 15%;
 }
 
 

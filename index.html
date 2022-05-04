@@ -11,21 +11,29 @@
 </head>
 <body>
 
-    <div id="container">
+    <div class="container">
+        <div id="campoLogin">
+            <label for="input3">E-mail:</label><input type="text" id="input3"> 
+            <label for="input4">Senha:</label><input type="text" id="input4">
+        </div>    
+        <button onclick="login()" id="logar">Login</button>
+    </div>
+    <div class="container">
         <div id="campoOrigemDestino">
-            <label for="input1">Origem:</label><input type="text" id="input1"> 
-            <label for="input2">Destino:</label><input type="text" id="input2">
+            <label for="input1">Origem:</label><input type="text" id="input1" disabled> 
+            <label for="input2">Destino:</label><select name="nomes" id="input2" disabled></select>
         </div>                                  
         <div id="campoChat">
             <div  id="chat"  style="resize: none;">
                 <ul id="aqui"></ul>
             </div>
             <div id="divMensage">
-                <textarea name="textArea" cols="30" rows="10" id="inputChat" style="resize: none;"></textarea>
+                <textarea name="textArea" cols="30" rows="10" id="inputChat" style="resize: none;" disabled></textarea>
                 <button id="button" onclick="chat()"></button>
             </div>
         </div>
     </div>
+   
 
     <script src="./assets/js/qyeryAPI.js"></script>
     
