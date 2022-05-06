@@ -11,14 +11,14 @@ var obj = {}
 
 pesquisaCadas(); 
 
-inputChat.value = 'eae vei blz?';
-senha.value = 123456; 
-email.value = "henrique.carneiro@cliqx.com.br"; 
+inputChat.value = '?';
+senha.value = "?"; 
+email.value = "?"; 
 
 function login () {
     var xhr = new XMLHttpRequest();
     console.log(email.value, senha.value)
-    xhr.open("GET",`https://barth.com.br/ApiChatCliqx/chat/verificarLogin.php?email=${email.value}&senha=${senha.value}`);
+    xhr.open("GET",`?`);
     xhr.send(null);
 
     xhr.onreadystatechange = function () {
@@ -32,6 +32,7 @@ function login () {
             if(response.login){
                 imputDestino.disabled  = false;
                 inputChat.disabled  = false;
+                inputChat.selected  = true;
                 imputOrigem.value = response.nome
             }
             //console.log(response);
@@ -44,7 +45,7 @@ function login () {
   function pesquisaCadas () {
     var xhr = new XMLHttpRequest();
     console.log(email.value, senha.value)
-    xhr.open("GET",`https://barth.com.br/ApiChatCliqx/chat/receberUsuarios.php`);
+    xhr.open("GET",`?`);
     xhr.send(null);
 
     xhr.onreadystatechange = function () {
@@ -71,7 +72,7 @@ function login () {
 
 function pesquisarAPI () {
     var xhr = new XMLHttpRequest();
-    xhr.open("GET",`https://barth.com.br/ApiChatCliqx/chat/verificarMensagem.php?origem=${imputOrigem.value}&destino=${imputDestino.value}`);
+    xhr.open("GET",`?`);
     xhr.send(null);
 
     xhr.onreadystatechange = function () {
@@ -121,7 +122,7 @@ function chat () {
         mensagem: inputChat.value,
     }
 
-    xhr.open("POST", "https://barth.com.br/ApiChatCliqx/chat/inserirMensagem.php");
+    xhr.open("POST", "?");
     xhr.send(JSON.stringify(obj));
 
     xhr.onreadystatechange = function () {
